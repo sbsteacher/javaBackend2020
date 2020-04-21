@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+    <h1>성적입력 & 조회</h1>
+    <table>
+        <tr>
+            <td><label for="nm2">이름:</label></td>
+            <td><input type="text" id="nm2" name="nm2"></td>
+        </tr>
+    </table>
+    <hr>
+    <form action="print" method="get">
+        <div><label>전공: <input type="text" name="major"></label></div>
+        <div>이름: <input type="text" name="nm"></div>
+        <div>비밀번호: <input type="password" name="pw"></div>
+        <div>나이: <input type="number" name="age"></div>
+        <div>중간성적: <input type="text" name="middle"></div>
+        <div>기말성적: <input type="text" name="last"></div>
+        <div>성별: <label>여<input type="radio" name="gender" value="0" checked></label>
+                   <label>남<input type="radio" name="gender" value="1"></label>
+                   <label>외계인<input type="radio" name="gender" value="2"></label>
+        </div>
+        <div>
+            취미 : <label>축구<input type="checkbox" name="hobbit" value="축구"></label>
+                   <label>음악감상<input type="checkbox" name="hobbit" value="음악감상" checked></label>
+                   <label>수영<input type="checkbox" name="hobbit" value="수영"></label>
+        </div>
+        <div>
+            학년: <select name="year">
+                    <option value="0">--선택--</option>
+                    <option value="1">1학년</option>
+                    <option value="2" selected>2학년</option>
+                    <option value="3">3학년</option>                    
+                </select>
+        </div>
+        <div>
+            파일선택: <input type="file" name="file">
+        </div>
+        <div>
+            <input type="hidden" name="babo" value="3">
+            <input type="text" name="babo2" value="2" readonly>
+        </div>
+        <div>
+            <input type="submit" value="처리결과 조회">
+            <input type="reset" value="입력 취소">
+        </div>
+    </form>
+</body>
+</html>
