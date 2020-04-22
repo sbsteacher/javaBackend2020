@@ -15,15 +15,25 @@
     </table>
     <hr>
     <form action="print" method="get">
-        <div><label>전공: <input type="text" name="major"></label></div>
-        <div>이름: <input type="text" name="nm"></div>
+        <div>
+            <label>전공: <input type="text" name="major" list="majorList" value="1212">
+                <datalist id="majorList">
+                    <option value="컴퓨터공학">
+                    <option value="건축학과">
+                    <option value="전자공학">
+                </datalist>
+        </label></div>
+        <div>이름: <input type="text" name="nm" required></div>
         <div>비밀번호: <input type="password" name="pw"></div>
-        <div>나이: <input type="number" name="age"></div>
+        <div>나이: <input type="number" name="age" placeholder="나이"></div>
         <div>중간성적: <input type="text" name="middle"></div>
         <div>기말성적: <input type="text" name="last"></div>
         <div>성별: <label>여<input type="radio" name="gender" value="0" checked></label>
                    <label>남<input type="radio" name="gender" value="1"></label>
                    <label>외계인<input type="radio" name="gender" value="2"></label>
+        </div>
+        <div>
+            생년월일: <input type="date" name="birth">
         </div>
         <div>
             취미 : <label>축구<input type="checkbox" name="hobbit" value="축구"></label>
@@ -40,6 +50,9 @@
         </div>
         <div>
             파일선택: <input type="file" name="file">
+        </div>
+        <div>
+            나의소개 : <textarea name="cmt"></textarea>
         </div>
         <div>
             <input type="hidden" name="babo" value="3">
